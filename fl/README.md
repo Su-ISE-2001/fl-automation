@@ -25,17 +25,4 @@ python fl/run_fl_automation.py
 约 45 步（对应原流程 31–75），包括：
 - 启动 FL → 联机 → 波长扫描/设置/仪器/狭缝/PMT → EM 扫描（使用 UV 的 peak_nm）→ 保存 xls → 读 A31 → 保存曲线 → EX 扫描（使用 A31）→ 保存 → 退出
 
-## 单独发布到 GitHub
 
-若只发布 FL 部分，可复制以下内容到新仓库：
-
-- 本目录 `fl/`
-- 根目录的 `core/`
-- 根目录的 `requirements.txt`、`config.yaml`
-
-运行前请确保有 UV 结果文件 `step22_result.json`（或 `step22_result_*.json`），或手动创建符合格式的 JSON。
-
-```bash
-pip install -r requirements.txt
-python fl/run_fl_automation.py
-```
