@@ -1,0 +1,41 @@
+# UV Analyst自动化配置文件
+
+# 软件快捷方式路径
+shortcut_path: "C:\\Users\\Public\\Desktop\\ UV Analyst for UV2510 4.1.lnk"
+
+# 应用程序设置
+app_settings:
+  # 启动后等待时间（秒）
+  launch_wait_time: 5
+  # 连接超时时间（秒）
+  connection_timeout: 10
+  # 操作间隔时间（秒）
+  action_interval: 0.5
+
+# 记录设置
+recording:
+  # 输出文件路径
+  output_file: "recorded_actions.json"
+  # 是否记录鼠标移动（会产生大量数据）
+  record_mouse_move: false
+  # 是否记录所有键盘事件
+  record_all_keys: true
+
+# 自动化脚本设置
+automation:
+  # 默认脚本文件
+  default_script: "automation_script.json"
+  # 截图保存目录
+  screenshot_dir: "screenshots"
+  # 是否在执行时截图
+  take_screenshots: true
+
+# 界面元素定位（根据实际软件界面调整）
+ui_elements:
+  # 按钮坐标或名称
+  buttons: {}
+  # 输入框坐标或名称
+  input_fields: {}
+  # 菜单路径
+  menus: {}
+
